@@ -38,8 +38,7 @@ public:
 	int winner = 999;
 	  void GameSet() {
 		  int BlueHP = 0; int RedHP = 0; int BlueDMG = 0; int RedDMG = 0;
-
-		  for (int i = 0; i < TeamBlue.size(); i++) {
+          for (int i = 0; i < TeamBlue.size(); i++) {
 			  BlueHP += TeamBlue[i].hero.rHP();
 			  BlueDMG += TeamBlue[i].hero.rDamage();
 		  }
@@ -65,8 +64,7 @@ public:
 
 			  int idBlue = TeamBlue[i].player.rID();
 			  int idRed = TeamRed[i].player.rID();
-
-			  for (int j = 0; j < players.size(); j++)
+				  for (int j = 0; j < players.size(); j++)
 			  {
 
 
@@ -86,8 +84,7 @@ public:
 		  }
 	  }
 	  void WinnerAnnouncement() {
-
-		  if (winner > 0) {
+      if (winner > 0) {
 			  cout << arr[winner] << " won this game" << endl;
 		  }
 		  else {
@@ -155,18 +152,11 @@ public:
 			  for (int i = 0; i < TeamRed.size(); i++)
 			  {
 				  
-				  cout << "Name: " << TeamRed[i].player.rName()
-					  << "\tID: " << TeamRed[i].player.rID()
-					  << "\tRank: " << TeamRed[i].player.rRating()
-					  << endl;
+				  cout << "Name: " << TeamRed[i].player.rName() << "\tID: " << TeamRed[i].player.rID() << "\tRank: " << TeamRed[i].player.rRating() << endl;
+					  
 				  
-				  cout << "Name: " << TeamRed[i].hero.rName()
-					  << "\tHP: " << TeamRed[i].hero.rHP()
-					  << "\tDamage: " << TeamRed[i].hero.rDamage()
-					  << "\tSpeed: " << TeamRed[i].hero.rSpeed()
-					  << endl
-					  << (i == TeamRed.size() - 1 ? "" : "------------------------------------------------")
-					  << endl;
+				  cout << "Name: " << TeamRed[i].hero.rName() << "\tHP: " << TeamRed[i].hero.rHP() << "\tDamage: " << TeamRed[i].hero.rDamage() << "\tSpeed: " << TeamRed[i].hero.rSpeed() << endl << (i == TeamRed.size() - 1 ? "" : "------------------------------------------------") << endl;
+					  
 			  }
 			  cout <<  endl;
 		  }
@@ -176,18 +166,11 @@ public:
 			  for (int i = 0; i < TeamBlue.size(); i++)
 			  {
 				  
-				  cout << "Name: " << TeamBlue[i].player.rName()
-					  << "\tID: " << TeamBlue[i].player.rID()
-					  << "\tRank: " << TeamBlue[i].player.rRating()
-					  << endl;
+				  cout << "Name: " << TeamBlue[i].player.rName() << "\tID: " << TeamBlue[i].player.rID() << "\tRank: " << TeamBlue[i].player.rRating() << endl;
+					 
 				  
-				  cout << "Name: " << TeamBlue[i].hero.rName()
-					  << "\tHP: " << TeamBlue[i].hero.rHP()
-					  << "\tDamage: " << TeamBlue[i].hero.rDamage()
-					  << "\tSpeed: " << TeamBlue[i].hero.rSpeed()
-					  << endl
-					  << (i == TeamBlue.size() - 1 ? "" : "------------------------------------------------")
-					  << endl;
+				  cout << "Name: " << TeamBlue[i].hero.rName() << "\tHP: " << TeamBlue[i].hero.rHP() << "\tDamage: " << TeamBlue[i].hero.rDamage() << "\tSpeed: " << TeamBlue[i].hero.rSpeed() << endl << (i == TeamBlue.size() - 1 ? "" : "------------------------------------------------") << endl;
+
 			  }
 			  cout << endl;
 		  }
